@@ -251,7 +251,7 @@ func (b *basicAuditor) AuditResponse(req *authorization.Request, pluginRes *auth
 func (b *basicAuditor) init() error {
 
 	if b.settings == nil {
-		return fmt.Errorf("Settings is not defeined")
+		return fmt.Errorf("Settings are not defined")
 	}
 
 	if b.logger != nil {
